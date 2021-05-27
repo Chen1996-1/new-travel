@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1619699534537'); /* IE9 */
+  src: url('iconfont.eot?t=1619699534537#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPgAAsAAAAACCAAAAORAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDPIJ8ATYCJAMUCwwABCAFhG0HShsKB1FUL2pkPwrjNifcVjRuK6pbIfyPIgS+/KvwjYfvlz/PfWVZ3qd0B6pW38ejEBKFoqv4qMSYGFmUiSvViN2aqjImQTqeDYPWROngylv/fnvLcsfxMlyECmALWIfysumm0hQAXmS2dVLbp9/9/D+X0xtlCcxvZzne2NRYwzrvqBdgNIGycE9sWx5lBZJ7w9iVF3GYQLNipHF9uD1DX2GMCsS9dwT9lFWpUYZe6EoWFvERmT69T8eAD/734z84DkqSmhkTb+72Aax+xfe3jA4oHxdBjecGW0bGLlCIh1LvvVaY3dXSlO5t50DTS9JYnSi/w19vw0DM7khuZo6kjPPnRccongDnMFf4RWITJH5RkmUShASZX2/0vRxUQcMY3gGfGLpVT8lCSDNULEyMbJz+bfQzDcTXuGvjF7GZ7uXAi5kL9By7JF5F0tc2sruP4bKGDXPc/ht51tRHYWxhtUT28Dp8AGUJCa1B+9NC+jGpsNrWtiFx2DPQ0pzitnVHcnvrdn3tcnPjit/Zu9bgdcQgzOrwVmmSqDx1Z32EWx7cKE6gCuPXFvsGRcVckIuME1IVU0KUrJzRxbw8zMW8wid/23iHl91KnXud/fbGTPI/QTPBujStdtAqSFtooJ/MkexsVsgO2QulpKWkCjkg0FaizR1gVhcGm78mff9rSG3450cS0Dqnv32aVMiwQNqvr9tBGLm5Rjz+Jg5ZZCnylL9KEvNP5v+Vxg/9Xt5Yc34L5uXV/5B/0O/thbXkN2Pe3v0H4A3AsJFXCbsAaYXwCpAPCfkADPt5GjH6mb/xXezqvz+Dzi9KmgK+je/b+eFhw7mAdiL8EUlr6tdRLcuKyhi2WuRSm5T7VQdaILGahh8WnPM3jn8RxO7QcwpCMmYZst4qWrS7UI2cQqd3Bs2O4/KReaIlyji2fQEIM74hmfIVshk/aNH+QrXkHzozgUBzG8wbjqxH5NBYmJQDfHyiN3lmLYcOA+WdXZ2QJBlf/8pS+QTO5RSyhSNnLGNMqd7cQtWilTzFAziOkyTHQvKIjU5C1WI5lQ8re9DE5CkMXRGMKBZAD5+QZ+Qy1q2uhrnP3zGnliBSo6pYvmKi4ttHcxOzFuhRzFqpruWUyhtnQSkLWSKXQgfgZomZzaGivF+EGWoi7JEuLE1RJdtWnMwvp8+4BRpjsxopcpSo0eme6sJT1g2zdwhr30n2lFA3jklMCAAAAAA=') format('woff2'),
+  url('iconfont.woff?t=1619699534537') format('woff'),
+  url('iconfont.ttf?t=1619699534537') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1619699534537#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icontupian:before {
+  content: "\e6df";
+}
+
+.iconfanhui:before {
+  content: "\e601";
+}
+
+.iconxiala:before {
+  content: "\e611";
+}
+
+.iconsearch:before {
+  content: "\e608";
+}
+
