@@ -30,12 +30,14 @@ export default {
     line-height: 1.8rem
     background: #eee
     text-indent: 1rem
-  .item-info-wrapper
+  .item-img-wrapper
     overflow: hidden
     height: 0
-    padding-bottom: 4rem
+    padding-bottom: 8rem
     .item-img
       width:100%
+  .item-info-wrapper
+    padding-bottom: .5rem
     .item-info-title
       line-height: 1.5rem
       ellipsis()
