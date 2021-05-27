@@ -22,3 +22,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## vue2.x 到 vue3.x 的升级
+```
+vue add vue-next
+```
