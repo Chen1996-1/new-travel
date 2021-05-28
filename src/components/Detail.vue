@@ -1,10 +1,14 @@
 <template>
- <div>
-   <detail-banner :sightName="sightName" :bannerImg="bannerImg" :gallaryImgs="gallaryImgs"></detail-banner>
-   <detail-header></detail-header>
-   <detail-list :list="categoryList"></detail-list>
-   <div class="test-height"></div>
- </div>
+  <div>
+    <detail-banner
+      :sightName="sightName"
+      :bannerImg="bannerImg"
+      :gallaryImgs="gallaryImgs"
+    ></detail-banner>
+    <detail-header></detail-header>
+    <detail-list :list="categoryList"></detail-list>
+    <div class="test-height"></div>
+  </div>
 </template>
 
 <script>
@@ -30,11 +34,13 @@ export default {
   },
   methods: {
     getDetailData () {
-      axios.get('/api/detail.json', {
-        params: {
-          name: this.$route.params.title
-        }
-      }).then(this.handleGetDataSucc)
+      axios
+        .get('/api/detail.json', {
+          params: {
+            name: this.$route.params.title
+          }
+        })
+        .then(this.handleGetDataSucc)
     },
     handleGetDataSucc (res) {
       const data = res.data.data
@@ -55,5 +61,4 @@ export default {
 <style lang="stylus" scoped>
 .test-height
   height: 1000rem
-
 </style>

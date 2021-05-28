@@ -4,11 +4,11 @@
     <ul>
       <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
-          <img class="item-img" :src="item.imgUrl"/>
+          <img class="item-img" :src="item.imgUrl" />
         </div>
         <div class="item-info-wrapper">
-          <p class="item-info-title">{{item.title}}</p>
-          <p class="item-info-desc">{{item.desc}}</p>
+          <p class="item-info-title">{{ item.title }}</p>
+          <p class="item-info-desc">{{ item.desc }}</p>
         </div>
       </li>
     </ul>

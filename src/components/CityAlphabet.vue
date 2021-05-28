@@ -11,7 +11,7 @@
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
       >
-      {{item}}
+        {{ item }}
       </li>
     </ul>
   </div>
@@ -40,7 +40,7 @@ export default {
     }
   },
   updated () {
-    this.startY = this.$refs.A[0].offsetTop
+    this.startY = this.$refs.A.offsetTop
   },
   methods: {
     handleClickGetAlphabet (key) {

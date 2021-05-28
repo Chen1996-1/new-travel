@@ -1,19 +1,23 @@
 <template>
   <div>
     <div class="banner" @click="handleClickGallaryImgs">
-      <img class="banner-img" :src="bannerImg"/>
+      <img class="banner-img" :src="bannerImg" />
       <div class="banner-info">
         <div class="info-title">
-          {{sightName}}
+          {{ sightName }}
         </div>
         <div class="info-counts">
           <span class="iconfont icon-img">&#xe6df;</span>
-          {{this.gallaryImgs.length}}
+          {{ this.gallaryImgs.length }}
         </div>
       </div>
     </div>
     <common-fade>
-      <common-gallary :list="gallaryImgs" v-show="showGallary" @handleClickBackBanner="handleClickBackBanner"></common-gallary>
+      <common-gallary
+        :list="gallaryImgs"
+        v-show="showGallary"
+        @handleClickBackBanner="handleClickBackBanner"
+      ></common-gallary>
     </common-fade>
   </div>
 </template>

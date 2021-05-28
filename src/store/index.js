@@ -5,4 +5,4 @@ import mutations from './mutations'
 export default Vuex.createStore({
   state,
   mutations
-});
+})

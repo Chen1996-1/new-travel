@@ -3,9 +3,9 @@
     <div class="wrapper">
       <swiper :options="swiperOptions">
         <swiper-slide v-for="(imgUrl, index) of list" :key="index">
-          <img class="img-swiper" :src="imgUrl">
+          <img class="img-swiper" :src="imgUrl" />
         </swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
+        <div class="swiper-pagination" :$slot="pagination"></div>
       </swiper>
     </div>
   </div>

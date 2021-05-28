@@ -2,8 +2,15 @@
   <div>
     <city-header></city-header>
     <city-search :cities="cities"></city-search>
-    <city-list :cities="cities" :hot="hotCities" :alphabet="alphabet"></city-list>
-    <city-alphabet :cities="cities" @selectAlphabet="selectAlphabet"></city-alphabet>
+    <city-list
+      :cities="cities"
+      :hot="hotCities"
+      :alphabet="alphabet"
+    ></city-list>
+    <city-alphabet
+      :cities="cities"
+      @selectAlphabet="selectAlphabet"
+    ></city-alphabet>
   </div>
 </template>
 
@@ -30,8 +37,7 @@ export default {
   },
   methods: {
     getCityInfo () {
-      axios.get('/api/city.json')
-        .then(this.handleGetCityInfoSucc)
+      axios.get('/api/city.json').then(this.handleGetCityInfoSucc)
     },
     selectAlphabet (alphabet) {
       this.alphabet = alphabet
@@ -51,6 +57,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-
-</style>
+<style lang="stylus" scoped></style>

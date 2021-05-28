@@ -1,15 +1,27 @@
 <template>
-<div>
-  <div class="search">
-    <input v-model="keyword" class="search-input" type="text" placeholder="输入城市名或拼音">
+  <div>
+    <div class="search">
+      <input
+        v-model="keyword"
+        class="search-input"
+        type="text"
+        placeholder="输入城市名或拼音"
+      />
+    </div>
+    <div class="search-content" ref="scroll" v-show="keywordIs">
+      <ul>
+        <li
+          class="search-item border-bottom"
+          v-for="item of indexList"
+          :key="item.id"
+          @click="handleClickSelectCity(item.name)"
+        >
+          {{ item.name }}
+        </li>
+        <li v-show="nocity">没找到</li>
+      </ul>
+    </div>
   </div>
-  <div class="search-content" ref="scroll" v-show="keywordIs">
-    <ul>
-      <li class="search-item border-bottom" v-for="item of indexList" :key="item.id" @click="handleClickSelectCity(item.name)">{{item.name}}</li>
-      <li v-show="nocity">没找到</li>
-    </ul>
-  </div>
-</div>
 </template>
 <script>
 import Bscroll from 'better-scroll'
@@ -40,8 +52,10 @@ export default {
         const result = []
         for (const i in this.cities) {
           this.cities[i].forEach((value) => {
-            if (value.spell.indexOf(this.keyword) > -1 ||
-              value.name.indexOf(this.keyword) > -1) {
+            if (
+              value.spell.indexOf(this.keyword) > -1 ||
+              value.name.indexOf(this.keyword) > -1
+            ) {
               result.push(value)
             }
           })

@@ -32,7 +32,10 @@ export default {
   methods: {
     handleScroll () {
       console.log('Detailscrolling')
-      const top = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset
+      const top =
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        window.pageYOffset
       if (top > 60) {
         let opacity = top / 140
         opacity = opacity > 1 ? 1 : opacity
@@ -44,7 +47,6 @@ export default {
         this.absShow = true
       }
     }
-
   },
   mounted () {
     window.addEventListener('scroll', this.handleScroll)
@@ -52,7 +54,6 @@ export default {
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
   }
-
 }
 </script>
 

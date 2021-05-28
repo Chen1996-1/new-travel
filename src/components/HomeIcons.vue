@@ -1,18 +1,18 @@
 <template>
-<swiper :options="swiperOptions">
-  <swiper-slide v-for="(iconList,index) of pageProjects" :key="index">
-  <div class="icons">
-    <div class="icon" v-for="iconItem of iconList" :key="iconItem.id">
-      <div class="icon-img">
-        <img class="icon-img-img" :src="iconItem.imgUrl">
+  <swiper :options="swiperOptions">
+    <swiper-slide v-for="(iconList, index) of pageProjects" :key="index">
+      <div class="icons">
+        <div class="icon" v-for="iconItem of iconList" :key="iconItem.id">
+          <div class="icon-img">
+            <img class="icon-img-img" :src="iconItem.imgUrl" />
+          </div>
+          <div class="icon-content">
+            {{ iconItem.desc }}
+          </div>
+        </div>
       </div>
-      <div class="icon-content">
-        {{ iconItem.desc}}
-      </div>
-    </div>
-  </div>
-  </swiper-slide>
-</swiper>
+    </swiper-slide>
+  </swiper>
 </template>
 
 <script>
@@ -79,5 +79,4 @@ export default {
       right:0
       text-align: center
       ellipsis()
-
 </style>

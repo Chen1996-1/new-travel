@@ -2,13 +2,18 @@
   <div>
     <div class="recommend-block-title">热销推荐</div>
     <ul>
-      <router-link class="item border-bottom" v-for="item of list" :key="item.id" :to="'/detail/' + item.title">
+      <router-link
+        class="item border-bottom"
+        v-for="item of list"
+        :key="item.id"
+        :to="'/detail/' + item.title"
+      >
         <div class="item-img-wrapper">
-          <img class="item-img" :src="item.imgUrl"/>
+          <img class="item-img" :src="item.imgUrl" />
         </div>
         <div class="item-info-wrapper">
-          <p class="item-info-title">{{item.title}}</p>
-          <p class="item-info-desc">{{item.desc}}</p>
+          <p class="item-info-title">{{ item.title }}</p>
+          <p class="item-info-desc">{{ item.desc }}</p>
           <button class="item-info-button">查看详情</button>
         </div>
       </router-link>
@@ -22,8 +27,7 @@ export default {
   props: {
     list: Array
   },
-  mounted () {
-  }
+  mounted () {}
 }
 </script>
 
@@ -60,5 +64,4 @@ export default {
         padding: 0 .2rem
         border-radius: .3rem
         collor: #fff
-
 </style>
